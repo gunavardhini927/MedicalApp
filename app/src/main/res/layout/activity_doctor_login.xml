@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable name="medico" type="String" />
+        <variable name="drEmail" type="String" />
+        <variable name="drPassword" type="String" />
+        <variable name="drLogin" type="String" />
+        <variable name="noAccountText" type="String" />
+        <variable name="drSignUpNow" type="String" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bluebg"
+        tools:context=".DoctorLoginActivity">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="353dp"
+            android:layout_height="519dp"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="214dp"
+                android:layout_height="114dp"
+                android:layout_marginStart="70dp"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/Id_medico"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="122dp"
+                android:layout_marginTop="115dp"
+                android:gravity="center"
+                android:text="@{medico}"
+                android:textSize="30sp"
+                android:textColor="@color/medico_txt_color"
+                android:textStyle="bold"
+                android:fontFamily="monospace"/>
+
+            <EditText
+                android:id="@+id/doctor_email_id"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="180dp"
+                android:layout_marginEnd="25dp"
+                android:background="@drawable/custom_input"
+                android:drawableStart="@drawable/ic_baseline_email_24"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="@{drEmail}"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textColorHint="@color/gray_hint"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/doctor_Password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="250dp"
+                android:layout_marginEnd="25dp"
+                android:background="@drawable/custom_input"
+                android:drawableStart="@drawable/ic_baseline_lock_24"
+                android:drawablePadding="12dp"
+                android:hint="@{drPassword}"
+                android:inputType="textPassword"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textColorHint="@color/gray_hint"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/Id_Dr_Login_btn"
+                android:layout_width="206dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="310dp"
+                android:shadowRadius="10"
+                android:backgroundTint="@color/btn_bg"
+                android:text="@{drLogin}"
+                android:textSize="23sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="@{noAccountText}"
+                android:textSize="20sp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="400dp"
+                android:textColor="@color/black"/>
+
+            <Button
+                android:id="@+id/Id_Dr_Sign_Up_Now"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="430dp"
+                android:text="@{drSignUpNow}"
+                android:textSize="23sp"
+                android:backgroundTint="@color/btn_bg"
+                android:textStyle="bold"/>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>

@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable name="drMedico" type="String" />
+        <variable name="drName" type="String" />
+        <variable name="drEmailId" type="String" />
+        <variable name="drMedicalID" type="String" />
+        <variable name="qualification" type="String" />
+        <variable name="department" type="String" />
+        <variable name="experience" type="String" />
+        <variable name="drPassword" type="String" />
+        <variable name="drPasswordText" type="String" />
+        <variable name="drPhone" type="String" />
+        <variable name="drSaveAndContinue" type="String" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/light_green_bg"
+        tools:context=".DoctorRegistrationActivity">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="116dp"
+                android:layout_margin="5dp"
+                android:background="@color/logo_bg"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="93dp"
+                    android:layout_height="67dp"
+                    android:layout_marginStart="150dp"
+                    android:src="@drawable/logo" />
+
+                <TextView
+                    android:id="@+id/Id_dr_reg_medico"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="150dp"
+                    android:fontFamily="monospace"
+                    android:text="@{drMedico}"
+                    android:textColor="@color/medico_txt_color"
+                    android:textSize="25sp" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/Id_reg_doc_full_name"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="125dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/custom_input"
+                android:drawableStart="@drawable/ic_baseline_person_24"
+                android:hint="@{drName}"
+                android:drawablePadding="12dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textSize="22sp"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/Id_reg_doc_email"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="170dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/custom_input"
+                android:hint="@{drEmailId}"
+                android:paddingStart="15dp"
+                android:drawableStart="@drawable/ic_baseline_email_24"
+                android:drawablePadding="12dp"
+                android:paddingEnd="15dp"
+                android:textSize="22sp"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/doc_medical_id"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="215dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/custom_input"
+                android:hint="@{drMedicalID}"
+                android:paddingStart="15dp"
+                android:drawableStart="@drawable/ic_baseline_perm_identity_24"
+                android:drawablePadding="12dp"
+                android:paddingEnd="15dp"
+                android:textSize="22sp"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/doc_qualification"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="260dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/custom_input"
+                android:hint="@{qualification}"
+                android:paddingStart="15dp"
+                android:drawableStart="@drawable/ic_baseline_school_24"
+                android:drawablePadding="12dp"
+                android:paddingEnd="15dp"
+                android:textSize="22sp"
+                android:inputType="text" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="305dp"
+                android:layout_marginEnd="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/doc_dept"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="5dp"
+                    android:hint="@{department}"
+                    android:textSize="22sp" />
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/custom_input"
+                    android:layout_weight="1" />
+
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/doc_experience"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="355dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:drawablePadding="12dp"
+                android:drawableStart="@drawable/ic_baseline_work_24"
+                android:background="@drawable/custom_input"
+                android:hint="@{experience}"
+                android:textSize="22sp" />
+
+            <EditText
+                android:id="@+id/Id_reg_doc_passsword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="395dp"
+                android:layout_marginEnd="20dp"
+                android:drawableStart="@drawable/ic_baseline_lock_24"
+                android:drawablePadding="12dp"
+                android:hint="@{drPassword}"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textSize="22sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="445dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:text="@{drPasswordText}"
+                android:textSize="15sp"
+                android:textColor="@color/black_gray" />
+
+            <EditText
+                android:id="@+id/Id_reg_doc_phoneno"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="505dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/custom_input"
+                android:hint="@{drPhone}"
+                android:paddingStart="15dp"
+                android:drawableStart="@drawable/ic_baseline_phone_24"
+                android:drawablePadding="12dp"
+                android:paddingEnd="15dp"
+                android:textSize="22sp"
+                android:inputType="text" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="545dp"
+                android:layout_marginEnd="20dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/custom_input"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:text="@string/male"
+                    android:textColor="@color/radio_clr"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/radio_male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/custom_input"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:text="@string/female"
+                    android:textColor="@color/radio_clr"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/radio_others"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/custom_input"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:text="@string/others"
+                    android:textColor="@color/radio_clr"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/Id_Dr_SaveAndContinue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="610dp"
+                android:text="@{drSaveAndContinue}"
+                android:textSize="23sp"
+                android:backgroundTint="@color/btn_bg"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

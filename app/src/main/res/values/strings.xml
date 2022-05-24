@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">MedicalApp</string>
+    <string name="medico">Medico</string>
+    <string name="enter_medical_id">Enter Medical Id</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="login">LOGIN</string>
+    <string name="you_dont_have_medico_account_yet">You don\'t have Medico account yet?</string>
+    <string name="sign_up_now">Sign Up Now</string>
+    <string name="enter_email_id">Enter E-mail Id</string>
+
+    //activity_Main
+    <string name="book_your_doctor_now">Book Your Doctor Now!!</string>
+    <string name="login_as">LOGIN AS</string>
+    <string name="doctor">DOCTOR</string>
+    <string name="patient">PATIENT</string>
+    <string name="or">OR</string>
+
+    <string name="sign_up_here">Sign Up Here</string>
+    <string name="create_password">Create Password</string>
+    <string name="enter_full_name">Enter Full Name</string>
+    <string name="enter_phone_no">Enter Phone No.</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="others">Others</string>
+    <string name="enter_address">Enter Address</string>
+    <string name="dob">DOB(DD/MM/YY)</string>
+    <string name="password_text">(Password Should be at least Min 8 chars, 1 number, 1 symbol. With combination of both upper and lower case alphabets)</string>
+    <string name="qualification">Enter Qualification</string>
+    <string name="department">Department</string>
+    <string name="submit">SAVE AND CONTINUE</string>
+    <string name="experience">Experience(year)</string>
+
+    <string name="selected_item">Selected item:</string>
+
+    <string-array name="Departments">
+        <item>          </item>
+        <item>Cardiology</item>
+        <item>Gynaecology</item>
+        <item>Neurology</item>
+        <item>Dermatology</item>
+        <item>Orthopaedics</item>
+
+    </string-array>
+
+
+</resources>

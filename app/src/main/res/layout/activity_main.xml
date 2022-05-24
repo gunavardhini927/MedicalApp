@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable name="bookDr" type="String" />
+        <variable name="loginAs" type="String" />
+        <variable name="or" type="String" />
+        <variable name="doctor" type="String" />
+        <variable name="patient" type="String" />
+
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/light_blue_bg"
+        tools:context=".MainActivity">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            tools:layout_editor_absoluteX="5dp"
+            tools:layout_editor_absoluteY="16dp">
+
+            <ImageView
+                android:layout_width="271dp"
+                android:layout_height="235dp"
+                android:layout_marginStart="55dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="70dp"
+                android:src="@drawable/doctor" />
+
+            <TextView
+                android:id="@+id/Id_book_dr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="300dp"
+                android:gravity="center"
+                android:text="@{bookDr}"
+                android:textColor="@color/black_gray"
+                android:textSize="30sp"
+                android:textStyle="italic" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="371dp"
+                android:src="@drawable/blue" />
+
+            <TextView
+                android:id="@+id/Id_login_as"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="115dp"
+                android:layout_marginTop="430dp"
+                android:gravity="center"
+                android:text="@{loginAs}"
+                android:textColor="@color/purple_700"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="166dp"
+                android:layout_marginTop="500dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/Id_DoctorBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="40dp"
+                    android:backgroundTint="@color/white"
+                    android:text="@{doctor}"
+                    android:textColor="@color/main_btn_color"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/Id_or"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="40dp"
+                    android:text="@{or}"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/Id_PatientBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:backgroundTint="@color/white"
+                    android:text="@{patient}"
+                    android:layout_marginStart="5dp"
+                    android:textColor="@color/main_btn_color"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

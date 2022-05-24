@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="splash_margin">5dp</dimen>
+    <dimen name="sp_one_top_margin">460dp</dimen>
+    <dimen name="sp_one_start_margin">82dp</dimen>
+    <dimen name="sp_one_text_size">45sp</dimen>
+</resources>
