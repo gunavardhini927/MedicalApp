@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable name="bookDr" type="String" />
+        <variable name="loginAs" type="String" />
+        <variable name="or" type="String" />
+        <variable name="doctor" type="String" />
+        <variable name="patient" type="String" />
+
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/light_blue_bg"
+        tools:context=".MainActivity">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/card_main_margin"
+           >
+
+            <ImageView
+                android:layout_width="@dimen/img_width_main"
+                android:layout_height="@dimen/img_height_main"
+                android:layout_marginStart="@dimen/img_start_main"
+                android:layout_marginTop="@dimen/img_top_main"
+                android:layout_marginEnd="@dimen/img_end_main"
+                android:src="@drawable/doctor" />
+
+            <TextView
+                android:id="@+id/Id_book_dr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/txt_main_start"
+                android:layout_marginTop="@dimen/txt_main_top"
+                android:gravity="center"
+                android:text="@{bookDr}"
+                android:textColor="@color/black_gray"
+                android:textSize="@dimen/txt_main_size"
+                android:textStyle="italic" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/img_two_main_top"
+                android:src="@drawable/blue" />
+
+            <TextView
+                android:id="@+id/Id_login_as"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/txt_two_main_start"
+                android:layout_marginTop="@dimen/txt_two_main_top"
+                android:gravity="center"
+                android:text="@{loginAs}"
+                android:textColor="@color/purple_700"
+                android:textSize="@dimen/txt_two_main_size"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/linear_main_height"
+                android:layout_marginTop="@dimen/linear_main_top"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/Id_DoctorBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/btn_main_start"
+                    android:layout_marginTop="@dimen/btn_main_top"
+                    android:backgroundTint="@color/white"
+                    android:text="@{doctor}"
+                    android:textColor="@color/main_btn_color"
+                    android:textSize="@dimen/btn_main_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/Id_or"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/txt_three_main_start"
+                    android:layout_marginTop="@dimen/txt_three_main_top"
+                    android:text="@{or}"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/txt_three_main_size"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/Id_PatientBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/btn_two_main_top"
+                    android:backgroundTint="@color/white"
+                    android:text="@{patient}"
+                    android:layout_marginStart="@dimen/btn_two_main_start"
+                    android:textColor="@color/main_btn_color"
+                    android:textSize="@dimen/btn_two_main_size"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

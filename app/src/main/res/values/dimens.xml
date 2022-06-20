@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    //Splash Screen
+        //Image
+            <dimen name="image_width">325dp</dimen>
+            <dimen name="image_height">200dp</dimen>
+        //TextView
+            <dimen name="txt_width">235dp</dimen>
+            <dimen name="splash_margin">5dp</dimen>
+            <dimen name="sp_one_top_margin">460dp</dimen>
+            <dimen name="sp_one_start_margin">82dp</dimen>
+            <dimen name="sp_one_text_size">45sp</dimen>
+
+    //Main Activity
+        //CardView
+            <dimen name="card_main_margin">5dp</dimen>
+            <dimen name="img_width_main">271dp</dimen>
+            <dimen name="img_height_main">235dp</dimen>
+            <dimen name="img_top_main">50dp</dimen>
+            <dimen name="img_start_main">55dp</dimen>
+            <dimen name="img_end_main">70dp</dimen>
+
+            <dimen name="txt_main_start">45dp</dimen>
+            <dimen name="txt_main_top">300dp</dimen>
+            <dimen name="txt_main_size">30sp</dimen>
+
+            <dimen name="img_two_main_top">371dp</dimen>
+
+            <dimen name="txt_two_main_start">115dp</dimen>
+            <dimen name="txt_two_main_top">430dp</dimen>
+            <dimen name="txt_two_main_size">35sp</dimen>
+
+
+            <dimen name="linear_main_top">500dp</dimen>
+            <dimen name="linear_main_height">166dp</dimen>
+
+            <dimen name="btn_main_start">18dp</dimen>
+            <dimen name="btn_main_top">40dp</dimen>
+            <dimen name="btn_main_size">25sp</dimen>
+
+            <dimen name="txt_three_main_start">5dp</dimen>
+            <dimen name="txt_three_main_top">40dp</dimen>
+            <dimen name="txt_three_main_size">30sp</dimen>
+
+            <dimen name="btn_two_main_start">5dp</dimen>
+            <dimen name="btn_two_main_top">40dp</dimen>
+            <dimen name="btn_two_main_size">25sp</dimen>
+
+    // Login Pages
+
+            <dimen name="login_card_width">353dp</dimen>
+            <dimen name="login_card_height">519dp</dimen>
+            <dimen name="login_card_margin">20dp</dimen>
+            <dimen name="login_card_radius">30dp</dimen>
+
+            <dimen name="login_img_width">214dp</dimen>
+            <dimen name="login_img_height">114dp</dimen>
+            <dimen name="login_img_margin_start">70dp</dimen>
+
+            <dimen name="login_txt_start">122dp</dimen>
+            <dimen name="login_txt_top">115dp</dimen>
+            <dimen name="login_txt_size">30sp</dimen>
+
+            <dimen name="login_ed_height">50dp</dimen>
+            <dimen name="login_ed_top">180dp</dimen>
+            <dimen name="login_ed_start">25dp</dimen>
+            <dimen name="login_ed_end">25dp</dimen>
+            <dimen name="login_ed_draw_padding">12dp</dimen>
+            <dimen name="login_ed_padding_start">12dp</dimen>
+            <dimen name="login_ed_padding_end">12dp</dimen>
+            <dimen name="login_ed_size">25sp</dimen>
+
+            <dimen name="login_ed_two_height">50dp</dimen>
+            <dimen name="login_ed_two_start">25dp</dimen>
+            <dimen name="login_ed_two_top">250dp</dimen>
+            <dimen name="login_ed_two_end">25dp</dimen>
+            <dimen name="login_ed_two_padding_draw">12dp</dimen>
+            <dimen name="login_ed_two_padding_start">12dp</dimen>
+            <dimen name="login_ed_two_padding_end">12dp</dimen>
+            <dimen name="login_ed_two_txt_size">25sp</dimen>
+
+            <dimen name="login_btn_width">206dp</dimen>
+            <dimen name="login_btn_start">70dp</dimen>
+            <dimen name="login_btn_top">310dp</dimen>
+            <dimen name="login_btn_radius">10</dimen>
+            <dimen name="login_btn_size">23sp</dimen>
+
+            <dimen name="login_txt_two_start">20dp</dimen>
+            <dimen name="login_txt_two_top">400dp</dimen>
+            <dimen name="login_txt_two_height">30dp</dimen>
+            <dimen name="login_txt_two_size">20sp</dimen>
+
+            <dimen name="login_btn_two_start">70dp</dimen>
+            <dimen name="login_btn_two_top">430dp</dimen>
+            <dimen name="login_btn_two_size">23sp</dimen>
+
+    //Patient Registration
+            <dimen name="pt_reg_card_margin">5dp</dimen>
+            <dimen name="pt_reg_card_radius">20dp</dimen>
+            <dimen name="pt_reg_card_elevation">5dp</dimen>
+
+            <dimen name="pt_reg_linear_margin">5dp</dimen>
+            <dimen name="pt_reg_linear_height">121dp</dimen>
+
+            <dimen name="pt_reg_img_margin_start">150dp</dimen>
+            <dimen name="pt_reg_img_height">67dp</dimen>
+            <dimen name="pt_reg_img_width">93dp</dimen>
+
+            <dimen name="pt_reg_txt_margin_start">150dp</dimen>
+            <dimen name="pt_reg_txt_size">25sp</dimen>
+            <dimen name="pt_reg_txt_width">103dp</dimen>
+
+            <dimen name="pt_reg_ed_margin_start">20dp</dimen>
+            <dimen name="pt_reg_ed_height">35dp</dimen>
+            <dimen name="pt_reg_ed_top">145dp</dimen>
+            <dimen name="pt_reg_ed_margin_end">20dp</dimen>
+            <dimen name="pt_reg_ed_padding_start">15dp</dimen>
+            <dimen name="pt_reg_ed_pad_end">15dp</dimen>
+            <dimen name="pt_reg_ed_draw_pad">12dp</dimen>
+            <dimen name="pt_reg_ed_size">22sp</dimen>
+
+            <dimen name="pt_reg_ed_two_size">22sp</dimen>
+            <dimen name="pt_reg_ed_two_height">35dp</dimen>
+            <dimen name="pt_reg_ed_two_top">195dp</dimen>
+            <dimen name="pt_reg_ed_two_start">20dp</dimen>
+            <dimen name="pt_reg_ed_two_end">20dp</dimen>
+            <dimen name="pt_reg_ed_two_pad_start">15dp</dimen>
+            <dimen name="pt_reg_ed_two_pad_end">15dp</dimen>
+            <dimen name="pt_reg_ed_two_draw_pad">12dp</dimen>
+
+            <dimen name="pt_reg_ed_three_top">245dp</dimen>
+            <dimen name="pt_reg_ed_three_start">20dp</dimen>
+            <dimen name="pt_reg_ed_three_end">20dp</dimen>
+            <dimen name="pt_reg_ed_three_size">22sp</dimen>
+            <dimen name="pt_reg_ed_three_draw_pad">12dp</dimen>
+            <dimen name="pt_reg_ed_three_pad_end">15dp</dimen>
+            <dimen name="pt_reg_ed_three_pad_start">15dp</dimen>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</resources>

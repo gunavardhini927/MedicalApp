@@ -1,0 +1,102 @@
+<resources>
+
+    //activity_Main
+    <string name="book_your_doctor_now">Book Your Doctor Now!!</string>
+    <string name="login_as">LOGIN AS</string>
+    <string name="doctor">DOCTOR</string>
+    <string name="or">OR</string>
+    <string name="patient">PATIENT</string>
+
+
+    //Doctor and Patient Login page
+    <string name="app_name">MedicalApp</string>
+    <string name="medico">Medico</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="login">LOGIN</string>
+    <string name="you_dont_have_medico_account_yet">You don\'t have Medico account yet?</string>
+    <string name="sign_up_now">Sign Up Now</string>
+    <string name="enter_email_id">Enter E-mail Id</string>
+
+
+    <string name="sign_up_here">Sign Up Here</string>
+
+
+    //Doctor's Registration Page
+    <string name="upload_image">Upload</string>
+    <string name="doctor_medical_id">Medical Id</string>
+    <string name="create_password">Create Password</string>
+    <string name="enter_full_name">Enter Full Name</string>
+    <string name="enter_phone_no">Enter Phone No.</string>
+    <string name="password_text">(Password Should be at least Min 8 chars, 1 number, 1 symbol. With combination of both upper and lower case alphabets)</string>
+    <string name="qualification">Enter Qualification</string>
+    <string name="department">Department</string>
+    <string name="submit">SAVE AND CONTINUE</string>
+    <string name="experience">Experience(year)</string>
+    <string name="selected_item">Selected item:</string>
+
+    //Dropdown
+    <string-array name="Departments">
+        <item>          </item>
+        <item>Cardiology</item>
+        <item>Gynaecology</item>
+        <item>Neurology</item>
+        <item>Dermatology</item>
+        <item>Orthopaedics</item>
+    </string-array>
+
+    //Patient Registration Page
+    <string name="dob">DD/MM/YYYY</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="others">Others</string>
+
+
+    //Home Fragment
+    <string name="welcome_to_medico">Welcome to Medico</string>
+    <string name="home">Home</string>
+    <string name="profile">My Profile</string>
+    <string name="appointment">Appointment</string>
+    <string name="feedback">Feedback</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="hello_home_fragment">Hello Home Fragment</string>
+    <string name="hello_profile_fragment">Hello Profile Fragment</string>
+    <string name="hello_appointment_fragment">Hello Appointment Fragment</string>
+    <string name="hello_feedback_fragment">Hello Feedback Fragment</string>
+
+    //All Appointment Page
+    <string name="allAppointments">All Appointments</string>
+    <string name="book_appointment">Want to Book an Appointment?</string>
+    <string name="btn_book_appointment">BOOK APPOINTMENT</string>
+    <string name="my_appointment">Want to see My Appointment?</string>
+    <string name="btn_my_appointment">MY APPOINTMENT</string>
+    <string name="approved_apt">"Want to see Approved list?"</string>
+    <string name="btn_approved_apt">APPROVED APPOINTMENTS</string>
+
+    //Department list
+
+    //Neuro Doctor
+    <string name="neuro_title">NEUROLOGY</string>
+    <string name="neuro_dr_name_one">Dr.Shaun</string>
+    <string name="neuro_dr_dept">Neurologist</string>
+    <string name="neuro_btn">Schedule</string>
+
+    <string name="neuro_dr_name_two">Dr.Reena</string>
+
+    //Schedule Page
+    <string name="sc_txt_schedule">Schedule</string>
+    <string name="sc_btn_date">Choose Date</string>
+    <string name="sc_txt_date">Date</string>
+    <string name="sc_btn_time">Choose Time</string>
+    <string name="sc_txt_time">Time</string>
+    <string name="sc_btn_apt">BooK Appointment</string>
+    <string name="sc_btn_cancel">Cancel Appointment</string>
+    <string name="welcome_home">Welcome Home</string>
+    <string name="welcome_profile">Welcome Profile</string>
+    <string name="welcome_appointment">Welcome Appointment</string>
+    <string name="departments">Departments</string>
+    <string name="patient_name">Patient Name</string>
+
+
+</resources>

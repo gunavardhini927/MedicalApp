@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable name="medico" type="String" />
+        <variable name="drEmail" type="String" />
+        <variable name="drPassword" type="String" />
+        <variable name="drLogin" type="String" />
+        <variable name="noAccountText" type="String" />
+        <variable name="drSignUpNow" type="String" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bluebg"
+        tools:context=".DoctorLoginActivity">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/login_card_width"
+            android:layout_height="@dimen/login_card_height"
+            android:layout_margin="@dimen/login_card_margin"
+            app:cardCornerRadius="@dimen/login_card_radius"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/login_img_width"
+                android:layout_height="@dimen/login_img_height"
+                android:layout_marginStart="@dimen/login_img_margin_start"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/Id_medico"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/login_txt_start"
+                android:layout_marginTop="@dimen/login_txt_top"
+                android:gravity="center"
+                android:text="@{medico}"
+                android:textSize="@dimen/login_txt_size"
+                android:textColor="@color/medico_txt_color"
+                android:textStyle="bold"
+                android:fontFamily="monospace"/>
+
+            <EditText
+                android:id="@+id/doctor_email_id"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/login_ed_height"
+                android:layout_marginStart="@dimen/login_ed_start"
+                android:layout_marginTop="@dimen/login_ed_top"
+                android:layout_marginEnd="@dimen/login_ed_end"
+                android:background="@drawable/custom_input"
+                android:drawableStart="@drawable/ic_baseline_email_24"
+                android:drawablePadding="@dimen/login_ed_draw_padding"
+                android:hint="@{drEmail}"
+                android:paddingStart="@dimen/login_ed_padding_start"
+                android:paddingEnd="@dimen/login_ed_padding_end"
+                android:textColorHint="@color/gray_hint"
+                android:textSize="@dimen/login_ed_size" />
+
+            <EditText
+                android:id="@+id/doctor_Password"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/login_ed_two_height"
+                android:layout_marginStart="@dimen/login_ed_two_start"
+                android:layout_marginTop="@dimen/login_ed_two_top"
+                android:layout_marginEnd="@dimen/login_ed_two_end"
+                android:background="@drawable/custom_input"
+                android:drawableStart="@drawable/ic_baseline_lock_24"
+                android:drawablePadding="@dimen/login_ed_two_padding_draw"
+                android:hint="@{drPassword}"
+                android:inputType="textPassword"
+                android:paddingStart="@dimen/login_ed_two_padding_start"
+                android:paddingEnd="@dimen/login_ed_padding_end"
+                android:textColorHint="@color/gray_hint"
+                android:textSize="@dimen/login_ed_two_txt_size" />
+
+            <Button
+                android:id="@+id/Id_Dr_Login_btn"
+                android:layout_width="@dimen/login_btn_width"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/login_btn_start"
+                android:layout_marginTop="@dimen/login_btn_top"
+                android:shadowRadius="10"
+                android:backgroundTint="@color/btn_bg"
+                android:text="@{drLogin}"
+                android:textSize="@dimen/login_btn_size"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/login_txt_two_height"
+                android:text="@{noAccountText}"
+                android:textSize="@dimen/login_txt_two_size"
+                android:layout_marginStart="@dimen/login_txt_two_start"
+                android:layout_marginTop="@dimen/login_txt_two_top"
+                android:textColor="@color/black"/>
+
+            <Button
+                android:id="@+id/Id_Dr_Sign_Up_Now"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/login_btn_two_start"
+                android:layout_marginTop="@dimen/login_btn_two_top"
+                android:text="@{drSignUpNow}"
+                android:textSize="@dimen/login_btn_two_size"
+                android:backgroundTint="@color/btn_bg"
+                android:textStyle="bold"/>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>
